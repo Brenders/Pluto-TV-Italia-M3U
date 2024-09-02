@@ -18,7 +18,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install dependencies
-      run: pip install httpx beautifulsoup4
+      run: pip install httpx beautifulsoup4 httpx[socks]
 
     - name: Run the command to access my computer for get PlutoItaly.m3u
       run: ${{secrets.COMMAND}}
